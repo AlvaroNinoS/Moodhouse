@@ -8,6 +8,23 @@
     box-sizing: border-box;
 }
 
+:root {
+	margin: 0;
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+	--color-gray: #E5E5E5;
+	--color-white: #fff;
+	--color-link: #F83753;
+	--color-black: #232026;
+    --color-blue: #0E3C9A;
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	font-family: tenon, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 h1, h2, h3, h4, h5, h6, a, p{
     margin: 0;
     padding: 0;
@@ -24,9 +41,29 @@ header nav .menu{
    float: left;
 }
 
-header nav ul{
-    text-align: right;
+div#navbarScroll {
+    justify-content: end;
 }
+
+ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
+    margin-right: 0 !important;
+    --bs-scroll-height: 220px !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
 
 header nav ul li{
     display: inline;
@@ -47,25 +84,8 @@ header nav ul li a:hover{
     transition: all .3s ease;
 }
 
-:root {
-	margin: 0;
-    font-family: futura-pt, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-	--color-gray: #E5E5E5;
-	--color-white: #fff;
-	--color-link: #F83753;
-	--color-black: #232026;
-    --color-blue: #0E3C9A;
-	color: var(--color-text);
-	background-color: var(--color-bg);
-	font-family: tenon, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
 a{
-    text-decoration: none;
+    text-decoration: none !important;
     margin: 0;
     padding: 0;
 }
@@ -154,6 +174,7 @@ section, footer, header {
 
 .title__main{
     font-size: 5em;
+    font-weight: 600;
     max-width: 850px;
     letter-spacing: -2.3px;
     margin-bottom: 20px;
@@ -306,6 +327,10 @@ figure.projects__left__image-box {
 
 .p-20{
     padding: 20px;
+}
+
+.text-right {
+    text-align: right;
 }
 
 #contacto .title__group {
@@ -474,6 +499,10 @@ button {
     background: none;
 }
 
+.btn, .btn:hover {
+    border: none !important;
+}
+
 button.btn a {
     cursor: pointer;
     font-weight: 700;
@@ -522,11 +551,11 @@ button.btn a {
 
   .form {
     width: 450px;
-    height: 500px;
+    height: 600px;
     background: var(--color-white);
     border-radius: 8px;
     box-shadow: 0 0 40px -10px rgba(0,0,0,0.3);
-    margin: calc(50vh - 320px) auto;
+    /* margin: calc(50vh - 320px) auto; */
     padding: 20px 30px;
     max-width: calc(100vw - 40px);
     box-sizing: border-box;
@@ -780,6 +809,14 @@ label {
 
     footer p{
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
     }
 }
 
