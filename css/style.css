@@ -142,6 +142,15 @@ section, footer, header {
     align-items: center;
 }
 
+.container-spc-center{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .container-column{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -173,6 +182,16 @@ section, footer, header {
 }
 
 .title__main{
+    font-size: 5em;
+    font-weight: 600;
+    max-width: 850px;
+    letter-spacing: -2.3px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.title__main02{
     font-size: 5em;
     font-weight: 600;
     max-width: 850px;
@@ -217,7 +236,7 @@ section, footer, header {
     align-items: start;
 }
 
-.title__group > .title__main, .title__group > .title__sub {
+.title__group > .title__main02, .title__group > .title__sub {
     text-align: left;
 }
 
@@ -656,12 +675,36 @@ label {
 
 @media screen and (max-width: 480px) {
     
-    .container {
+    .container-spc, .container-spc-center {
         flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .container-column{
+        padding: 0 20px;
+    }
+
+    .projects__right__group {
+        margin-right: 0;
+    }
+
+    .projects__left__group {
+        margin-left: 0;
+    }
+
+    figure.projects__right__image-box, figure.projects__left__image-box {
+        border-radius: 40px 40px 0px 0px;
+        margin-top: 40px;
     }
 
     .title__main{
-        font-size: 1.8em;
+        font-size: 2.4em;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .title__main02{
+        font-size: 2.4em;
         max-width: 100%;
     }
 
@@ -681,10 +724,11 @@ label {
         width: 100%;
         margin: 50px auto;
         gap: 20px;
+        padding: 0 20px;
     }
 
     .intro__title {
-        font-size: 1.4em;
+        font-size: 1.8em;
         text-align: center;
     }
 
@@ -702,10 +746,11 @@ label {
     .projects__right__group, .projects__left__group {
         width: 100%;
         align-items: center;
+        gap: 20px;
     }
 
     .projects__title {
-        font-size: 1.6em;
+        font-size: 1.8em;
     }
 
     .projects__right__title, .projects__left__title {
@@ -736,6 +781,10 @@ label {
         color: var(--color-black);
         font-size: 1.6em;
         max-width: 100%;
+    }
+
+    .box {
+        margin-top: 20px;
     }
 
     .gallery {
@@ -805,9 +854,10 @@ label {
 
     footer {
         flex-direction: column;
+        align-items: center;
     }
 
-    footer p{
+    footer p, footer p.text-right{
         text-align: center;
     }
 }
