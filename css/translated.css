@@ -33,7 +33,7 @@ p {
   font-family: futura-pt, sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #232026; }
+  color: var(--color-text); }
 
 .red {
   color: #F83753; }
@@ -140,7 +140,7 @@ button {
       color: #fff; }
     button.btn a:hover svg {
       transform: translateX(5px);
-      color: #fff; }
+      color: var(--color-white); }
   button.btn a:active {
     transform: scale(0.95); }
   button.btn a > svg {
@@ -148,7 +148,7 @@ button {
     margin-left: 5px;
     transition: transform .3s ease-in-out; }
     button.btn a > svg:hover > svg path {
-      fill: #fff; }
+      fill: var(--color-white); }
 
 .btn, .btn:hover {
   border: none !important; }
@@ -215,7 +215,7 @@ footer {
     letter-spacing: 1.2px;
     color: #FFFFFF;
     fill: #FFFFFF;
-    background-color: #F83753;
+    background-color: var(--color-red);
     border-radius: 20px 20px 20px 20px;
     padding: 6px 13px 4px 13px; }
 
@@ -406,63 +406,71 @@ figure.nosotros {
 .form {
   width: 450px;
   height: 600px;
-  background: #fff;
+  background: var(--color-white);
   border-radius: 8px;
   box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.3);
   padding: 20px 30px;
   max-width: calc(100vw - 40px);
   box-sizing: border-box;
   position: relative; }
-  .form h2 {
-    margin: 10px 0;
-    padding-bottom: 10px;
-    width: 100%;
-    color: #232026;
-    border-bottom: 3px solid #F83753; }
-  .form input {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    background: none;
-    outline: none;
-    resize: none;
-    border: 0;
-    transition: all 0.3s;
-    border-bottom: 2px solid #E5E5E5; }
-    .form input:focus {
-      border-bottom: 2px solid #78788c; }
-  .form p:before {
-    content: attr(type);
-    display: block;
-    margin: 28px 0 0;
-    font-size: 14px;
-    color: #232026; }
-  .form button {
-    float: right;
-    padding: 8px 12px;
-    margin: 8px 0 0;
-    border: 2px solid #F83753;
-    background: 0;
-    color: #232026;
-    cursor: pointer;
-    transition: all 0.3s; }
-    .form button:hover {
-      background: #F83753;
-      color: #fff; }
-  .form div {
-    content: "Hi";
-    position: absolute;
-    bottom: -40px;
-    right: -20px;
-    background: #232026;
-    color: #fff;
-    width: 320px;
-    padding: 16px 4px 16px 0;
-    border-radius: 6px;
-    font-size: 13px;
-    box-shadow: 10px 10px 40px -14px rgba(0, 0, 0, 0.3); }
-  .form span {
-    margin: 0 5px 0 15px; }
+
+.form h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 100%;
+  color: var(--color-black);
+  border-bottom: 3px solid var(--color-red); }
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  transition: all 0.3s;
+  border-bottom: 2px solid var(--color-gray); }
+
+.form input:focus {
+  border-bottom: 2px solid #78788c; }
+
+.form p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: var(--color-black); }
+
+.form button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  border: 2px solid var(--color-red);
+  background: 0;
+  color: var(--color-black);
+  cursor: pointer;
+  transition: all 0.3s; }
+
+.form button:hover {
+  background: var(--color-red);
+  color: var(--color-white); }
+
+.form div {
+  content: "Hi";
+  position: absolute;
+  bottom: -40px;
+  right: -20px;
+  background: var(--color-black);
+  color: var(--color-white);
+  width: 320px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 10px 10px 40px -14px rgba(0, 0, 0, 0.3); }
+
+.form span {
+  margin: 0 5px 0 15px; }
 
 input[type="radio"], input[type="checkbox"] {
   display: inline;
@@ -481,13 +489,14 @@ label {
   margin-bottom: 5px;
   font-weight: normal;
   font-size: 14px;
-  color: #232026; }
+  color: var(--color-black); }
 
 .checkboxes {
   width: 100%; }
-  .checkboxes span {
-    margin: 0 10px 0 0;
-    display: inline-block; }
+
+.checkboxes span {
+  margin: 0 10px 0 0;
+  display: inline-block; }
 
 /*Responsive*/
 @media screen and (max-width: 480px) {
@@ -554,7 +563,7 @@ label {
   .info {
     padding: 50px 0; }
   .info__title {
-    color: #232026;
+    color: var(--color-black);
     font-size: 1.6em;
     max-width: 100%; }
   .box {

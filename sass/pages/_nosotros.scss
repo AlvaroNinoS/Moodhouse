@@ -1,0 +1,33 @@
+.title{
+
+    &__main02{
+        font-size: 5em;
+        font-weight: 600;
+        max-width: 850px;
+        letter-spacing: -2.3px;
+        margin-bottom: 20px;
+        text-align: center;
+        line-height: 1.1;
+    }
+    &__sub{
+        max-width: 800px;
+        text-align: center;
+        font-size: 1.4em;
+    }
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    &__group > .title__main02, .title__group > .title__sub {
+        text-align: left;
+    }
+
+}
+
+figure.nosotros{
+    max-width: 55%;
+}

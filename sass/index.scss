@@ -1,0 +1,25 @@
+@import url("https://use.typekit.net/zgi2mhi.css");
+
+/*Misc*/
+
+@import './misc/variables';
+@import './misc/normalize';
+@import './misc/others';
+@import './misc/animations';
+
+/*Partials*/
+
+@import './partials/header';
+@import './partials/footer';
+
+/*Pages*/
+
+@import './pages/home';
+@import './pages/nosotros';
+@import './pages/soluciones';
+@import './pages/galeria';
+@import './pages/contacto';
+
+/*Responsive*/
+
+@import './responsive/responsive';

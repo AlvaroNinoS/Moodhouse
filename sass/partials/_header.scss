@@ -1,0 +1,38 @@
+header nav {
+    &.logo-col{
+        width: 50%;
+        float: left;
+    }
+    &.menu{
+        width: 50%;
+        float: left;
+     }
+    ul{
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+
+        li{
+            display: inline;
+            padding: 10px 15px;
+
+            &.active a{
+                color: $color-red;
+            }
+            
+            a{
+                color: #232026;
+                font-size: 1.1em;
+                letter-spacing: 0px;
+                font-weight: 500;
+                text-decoration: none;
+
+            &:hover{
+                color: $color-red;
+                transform: translateX(5px);
+                transition: all .3s ease;
+            }
+            }
+        }   
+    } 
+}

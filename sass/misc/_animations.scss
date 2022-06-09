@@ -1,0 +1,8 @@
+.marquee__text {
+    animation: parallax_text linear 40s infinite both;
+  }
+  
+  @keyframes parallax_text {  
+      0% { transform-origin: -100px 100%;} 
+      100% {transform-origin: -20000px 100%; } 
+    }
