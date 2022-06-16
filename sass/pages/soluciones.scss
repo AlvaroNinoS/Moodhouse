@@ -1,5 +1,5 @@
 .box{
-    border: solid 2px $color-gray;
+    border: solid 2px map-get($colors, color-gray);
     border-radius: 20px;
     margin: 20px;
     margin-top: 60px;
@@ -12,20 +12,41 @@
         margin-bottom: 20px;
     }
 
-    & button{
+    & button.red{
         font-size: 11px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 1.2px;
-        color: #FFFFFF;
         fill: #FFFFFF;
-        background-color: $color-red;
+        background-color: map-get($colors, color-red);
         border-radius: 20px 20px 20px 20px;
         padding: 6px 13px 4px 13px;
         margin-top: 20px;
+    
+        & a{
+            color: #FFFFFF;
+        }
 
         &:hover{
-            background-color: $color-blue;
+            background-color: map-get($colors, color-blue);
+        }
+    }
+
+    & button.blue{
+        @extend button.red;
+        background-color: map-get($colors, color-blue);
+
+        &:hover{
+            background-color: map-get($colors, color-red);
+        }
+    }
+
+    & button.black{
+        @extend button.red;
+        background-color: map-get($colors, color-black);
+
+        &:hover{
+            background-color: map-get($colors, color-gray);
         }
     }
 }

@@ -1,11 +1,13 @@
 // colors
 
-$color-gray: #E5E5E5;
-$color-white: #fff;
-$color-red: #F83753;
-$color-black: #232026;
-$color-blue: #0E3C9A;
-$color-bg: #fff;
+$colors: (
+    color-gray: #E5E5E5,
+    color-white: #ffffff,
+    color-red: #F83753,
+    color-black: #232026,
+    color-blue: #0E3C9A,
+    color-bg: #ffffff
+);
 
 // font family
 

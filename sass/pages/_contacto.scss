@@ -5,7 +5,7 @@
 .form {
     width: 450px;
     height: 600px;
-    background: $color-white;
+    background: map-get($colors, color-white);
     border-radius: 8px;
     box-shadow: 0 0 40px -10px rgba(0,0,0,0.3);
     padding: 20px 30px;
@@ -17,8 +17,8 @@
         margin: 10px 0;
         padding-bottom: 10px;
         width: 100%;
-        color: $color-black;
-        border-bottom: 3px solid $color-red;
+        color: map-get($colors, color-black);
+        border-bottom: 3px solid map-get($colors, color-red);
       }
 
       & input {
@@ -30,7 +30,7 @@
         resize: none;
         border: 0;
         transition: all 0.3s;
-        border-bottom: 2px solid $color-gray;
+        border-bottom: 2px solid map-get($colors, color-gray);
 
         &:focus {
             border-bottom: 2px solid #78788c;
@@ -42,22 +42,22 @@
         display: block;
         margin: 28px 0 0;
         font-size: 14px;
-        color: $color-black;
+        color: map-get($colors, color-black);
       }
 
       & button {
         float: right;
         padding: 8px 12px;
         margin: 8px 0 0;
-        border: 2px solid $color-red;
+        border: 2px solid map-get($colors, color-red);
         background: 0;
-        color: $color-black;
+        color: map-get($colors, color-black);
         cursor: pointer;
         transition: all 0.3s;
 
         &:hover {
-            background: $color-red;
-            color: $color-white;
+            background: map-get($colors, color-red);
+            color: map-get($colors, color-white);
           }
       }
 
@@ -66,8 +66,8 @@
         position: absolute;
         bottom: -40px;
         right: -20px;
-        background: $color-black;
-        color: $color-white;
+        background: map-get($colors, color-black);
+        color: map-get($colors, color-white);
         width: 320px;
         padding: 16px 4px 16px 0;
         border-radius: 6px;
@@ -101,7 +101,7 @@ label {
     margin-bottom: 5px;
     font-weight: normal;
     font-size: 14px;
-    color: $color-black;
+    color: map-get($colors, color-black);
 }
 
 .checkboxes{

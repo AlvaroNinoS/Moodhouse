@@ -17,7 +17,7 @@ header nav {
             padding: 10px 15px;
 
             &.active a{
-                color: $color-red;
+                color: map-get($colors, color-red);
             }
             
             a{
@@ -28,7 +28,7 @@ header nav {
                 text-decoration: none;
 
             &:hover{
-                color: $color-red;
+                color: #F83753;
                 transform: translateX(5px);
                 transition: all .3s ease;
             }
