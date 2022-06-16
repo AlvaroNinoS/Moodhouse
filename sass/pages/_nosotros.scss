@@ -16,10 +16,7 @@
     }
 
     &__group {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
+        @include flex(column, center, start, initial);
     }
 
     &__group > .title__main02, .title__group > .title__sub {

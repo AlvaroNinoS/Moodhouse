@@ -17,20 +17,17 @@
         letter-spacing: 1.2px;
         color: #FFFFFF;
         fill: #FFFFFF;
-        background-color: $color-red;
+        background-color: map-get($colors, color-red);
         border-radius: 20px 20px 20px 20px;
         padding: 6px 13px 4px 13px;
     }
 }
 
 .intro{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    @include flex(row, center, center, 20px);
     width: 900px;
     margin: 100px auto;
-    gap: 20px;
+   
 
     &__title {
         font-size: 2.7em;
@@ -102,10 +99,7 @@
 
     &__right__group, &__left__group{
         width: 40%;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        gap: 40px;
+        @include flex(column, center, start, 40px);
     }
 
     &__right__title, &__left__title{
@@ -120,13 +114,13 @@
         font-size: 1.2em;
         font-weight: 600;
         letter-spacing: 4.5px;
-        color: $color-black;
+        color: map-get($colors, color-black);
         text-transform: uppercase;
         padding-bottom: 10px;
-        border-bottom: solid $color-black 2px;
+        border-bottom: solid map-get($colors, color-black) 2px;
 
         &:hover{
-            color: $color-red;
+            color: map-get($colors, color-red);
         }
     }
 
@@ -156,19 +150,19 @@
     padding: 100px 0;
 
     &__title{
-        color: $color-black;
+        color: map-get($colors, color-black);
         font-size: 2.4em;
         max-width: 800px;
         text-align: center;
     }
 
     & button.btn a{
-        color: $color-white;
-        fill: $color-white;
-        background-color: $color-black;
+        color: map-get($colors, color-white);
+        fill: map-get($colors, color-white);
+        background-color: map-get($colors, color-black);
     }
 
     & button.btn a > svg {
-        fill: $color-white;
+        fill: map-get($colors, color-white);
     }
 }

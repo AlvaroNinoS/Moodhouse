@@ -103,7 +103,7 @@
     }
 
     .info__title {
-        color: $color-black;
+        color: map-get($colors, color-black);
         font-size: 1.6em;
         max-width: 100%;
     }

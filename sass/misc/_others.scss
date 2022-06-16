@@ -63,21 +63,21 @@ video {
         transition: all .2s;
         padding: 10px 20px;
         border-radius: 100px;
-        background: $color-gray;
+        background: map-get($colors, color-gray);
         border: 1px solid transparent;
         display: flex;
         align-items: center;
         font-size: 15px;
-        color: $color-black;
+        color: map-get($colors, color-black);
         margin-top: 40px;
 
         &:hover {
-            background-color: $color-blue;
-            color: $color-white;
+            background-color: map-get($colors, color-blue);
+            color: map-get($colors, color-white);
            }
         &:hover svg {
             transform: translateX(5px);
-            color: $color-white;
+            color: map-get($colors, color-white);
            }
        }
     
@@ -91,7 +91,7 @@ video {
         transition: transform .3s ease-in-out;
 
         &:hover > svg path{
-            fill: $color-white;
+            fill: map-get($colors, color-white);
         }
        }
        

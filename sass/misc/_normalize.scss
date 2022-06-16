@@ -9,8 +9,8 @@ root {
     font-weight: 500;
     font-style: normal;
     font-family: $font-primary;
-	color: $color-black;
-	background-color: $color-bg;
+	color: map-get($colors, color-black);
+	background-color: map-get($colors, color-bg);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -36,11 +36,11 @@ p{
     font-family: futura-pt, sans-serif;
     font-weight: 500;
     font-style: normal;
-    color: $color-black;
+    color: map-get($colors, color-black);
 }
 
 .red{
-    color: $color-red;
+    color: map-get($colors, color-red);
 }
 
 footer, header {

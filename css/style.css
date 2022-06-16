@@ -11,7 +11,7 @@ root {
   font-style: normal;
   font-family: futura-pt, sans-serif;
   color: #232026;
-  background-color: #fff;
+  background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -137,10 +137,10 @@ button {
     margin-top: 40px; }
     button.btn a:hover {
       background-color: #0E3C9A;
-      color: #fff; }
+      color: #ffffff; }
     button.btn a:hover svg {
       transform: translateX(5px);
-      color: #fff; }
+      color: #ffffff; }
   button.btn a:active {
     transform: scale(0.95); }
   button.btn a > svg {
@@ -148,7 +148,7 @@ button {
     margin-left: 5px;
     transition: transform .3s ease-in-out; }
     button.btn a > svg:hover > svg path {
-      fill: #fff; }
+      fill: #ffffff; }
 
 .btn, .btn:hover {
   border: none !important; }
@@ -224,9 +224,9 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 20px;
   width: 900px;
-  margin: 100px auto;
-  gap: 20px; }
+  margin: 100px auto; }
   .intro__title {
     font-size: 2.7em;
     font-weight: 500;
@@ -279,6 +279,7 @@ footer {
     width: 40%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: start;
     gap: 40px; }
   .projects__right__title, .projects__left__title {
@@ -316,11 +317,11 @@ footer {
     max-width: 800px;
     text-align: center; }
   .info button.btn a {
-    color: #fff;
-    fill: #fff;
+    color: #ffffff;
+    fill: #ffffff;
     background-color: #232026; }
   .info button.btn a > svg {
-    fill: #fff; }
+    fill: #ffffff; }
 
 .title__main02 {
   font-size: 5em;
@@ -340,7 +341,8 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start; }
+  align-items: start;
+  gap: initial; }
 
 .title__group > .title__main02, .title .title__group > .title__sub {
   text-align: left; }
@@ -359,19 +361,28 @@ figure.nosotros {
     font-size: 1.6em;
     font-weight: 600;
     margin-bottom: 20px; }
-  .box button {
+  .box button.red, .box button.blue, .box button.black {
     font-size: 11px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.2px;
-    color: #FFFFFF;
     fill: #FFFFFF;
     background-color: #F83753;
     border-radius: 20px 20px 20px 20px;
     padding: 6px 13px 4px 13px;
     margin-top: 20px; }
-    .box button:hover {
+    .box button.red a, .box button.blue a, .box button.black a {
+      color: #FFFFFF; }
+    .box button.red:hover, .box button.blue:hover, .box button.black:hover {
       background-color: #0E3C9A; }
+  .box button.blue {
+    background-color: #0E3C9A; }
+    .box button.blue:hover {
+      background-color: #F83753; }
+  .box button.black {
+    background-color: #232026; }
+    .box button.black:hover {
+      background-color: #E5E5E5; }
 
 .gallery {
   display: grid;
@@ -406,7 +417,7 @@ figure.nosotros {
 .form {
   width: 450px;
   height: 600px;
-  background: #fff;
+  background: #ffffff;
   border-radius: 8px;
   box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.3);
   padding: 20px 30px;
@@ -448,14 +459,14 @@ figure.nosotros {
     transition: all 0.3s; }
     .form button:hover {
       background: #F83753;
-      color: #fff; }
+      color: #ffffff; }
   .form div {
     content: "Hi";
     position: absolute;
     bottom: -40px;
     right: -20px;
     background: #232026;
-    color: #fff;
+    color: #ffffff;
     width: 320px;
     padding: 16px 4px 16px 0;
     border-radius: 6px;
