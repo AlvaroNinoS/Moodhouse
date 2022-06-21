@@ -14,3 +14,10 @@ $colors: (
 $font-primary: futura-pt, sans-serif;
 $font-secondary: tenon, sans-serif;
 
+// Responsive
+
+$breakpoints: (
+    sm: 540px,
+    md: 991px,
+    lg: 1400px
+);

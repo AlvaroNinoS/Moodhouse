@@ -9,6 +9,12 @@
         margin-bottom: 20px;
         text-align: center;
         line-height: 1.1;
+
+        @include media-up(md){
+            font-size: 2.4em;
+            max-width: 100%;
+            padding: 0 20px;
+        }
     }
     &__pill{
         font-size: 11px;
@@ -20,11 +26,15 @@
         background-color: map-get($colors, color-red);
         border-radius: 20px 20px 20px 20px;
         padding: 6px 13px 4px 13px;
+
+        @include media-up(md){
+            text-align: center;
+        }
     }
 }
 
 .intro{
-    @include flex(row, center, center, 20px);
+    @include flex(row, center, stretch, 50px);
     width: 900px;
     margin: 100px auto;
    
@@ -34,11 +44,32 @@
         font-weight: 500;
         line-height: 1;
         text-align: right;
+
+        @include media-up(md){
+            font-size: 1.8em;
+            text-align: center;
+        }
     }
 
     &__right p{
         font-size: 1.5em;
         font-weight: 400;
+
+        @include media-up(md){
+            font-size: 1.2em;
+            text-align: center;
+        }
+    }
+
+    @include media-up(md){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 50px auto;
+        gap: 20px;
+        padding: 0 20px;
     }
 
 
@@ -54,6 +85,14 @@
         font-weight: 600;
         transform-origin: -100px;
         transform: translateZ(3px) scale(0.9);
+
+        @include media-up(md){
+            font-size: 1.4rem;
+        }
+    }
+
+    @include media-up(md){
+        margin: 50px 0;
     }
 }
 
@@ -65,14 +104,26 @@
         text-align: center;
         font-size: 3.5em;
         margin-bottom: 60px;
+
+        @include media-up(md){
+            font-size: 1.8em;
+        }
     }
 
     &__right__group {
         margin-right: -100px;  
+
+        @include media-up(md){
+            margin-right: 0;
+        }
     }
 
     &__left__group {
         margin-left: -50px;  
+
+        @include media-up(md){
+            margin-left: 0;
+        }
     }
 
     &__right__image-box {
@@ -84,6 +135,11 @@
         --e-column-margin-left: 0%;
         padding: 8% 15% 8% 10%;
         border-radius: 40px 0px 0px 0px;
+
+        @include media-up(md){
+            border-radius: 40px 40px 0px 0px;
+            margin-top: 40px;
+        }
     }
 
     &__left__image-box {
@@ -95,19 +151,40 @@
         --e-column-margin-left: 0%;
         padding: 8% 10% 8% 10%;
         border-radius: 0px 40px 0px 0px;
+
+        @include media-up(md){
+            border-radius: 40px 40px 0px 0px;
+            margin-top: 40px;
+        }
     }
 
     &__right__group, &__left__group{
         width: 40%;
         @include flex(column, center, start, 40px);
+
+        @include media-up(md){
+            width: 100%;
+            align-items: center;
+            gap: 20px;
+        }
     }
 
     &__right__title, &__left__title{
         font-size: 3em;
+
+        @include media-up(md){
+            font-size: 1.5em;
+            text-align: center;
+        }
     }
 
     &__right__text, &__left__text{
         font-size: 1.5em;
+
+        @include media-up(md){
+            font-size: 1.2em;
+            text-align: center;
+        }
     }
 
     & button a{
@@ -121,6 +198,12 @@
 
         &:hover{
             color: map-get($colors, color-red);
+        }
+
+        @include media-up(md){
+            font-size: 1em;
+            padding-bottom: 10px;
+            margin-bottom: 50px;
         }
     }
 
@@ -137,14 +220,26 @@
 
     &__left{
         flex-direction: row-reverse;
+
+        @include media-up(md){
+            flex-direction: column;
+        }
     }
 
     & figure img{
         max-width: 500px;
         border-radius: 20px;
     }
+
+    &.container{
+        @include media-up(md){
+            max-width: 100%;
+            margin: 50px auto;
+            gap: 50px;
+        }
+    }
     
- }   
+ }
 
  .info {
     padding: 100px 0;
@@ -154,6 +249,12 @@
         font-size: 2.4em;
         max-width: 800px;
         text-align: center;
+
+        @include media-up(md){
+            color: map-get($colors, color-black);
+            font-size: 1.6em;
+            max-width: 100%;
+        }
     }
 
     & button.btn a{
@@ -164,5 +265,9 @@
 
     & button.btn a > svg {
         fill: map-get($colors, color-white);
+    }
+
+    @include media-up(md){
+        padding: 50px 0;
     }
 }

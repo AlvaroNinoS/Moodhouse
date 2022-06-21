@@ -12,6 +12,12 @@ header nav {
         flex-direction: row;
         align-items: end;
 
+        @include media-up(md){
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+        }
+
         li{
             display: inline;
             padding: 10px 15px;
