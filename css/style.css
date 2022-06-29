@@ -470,7 +470,7 @@ figure.nosotros {
   border-radius: 20px;
   margin: 20px;
   margin-top: 60px;
-  padding: 40px;
+  padding: 40px 60px;
   justify-content: space-evenly; }
   .box h3 {
     font-size: 1.6em;
@@ -480,6 +480,9 @@ figure.nosotros {
     display: flex;
     flex-direction: column;
     align-items: flex-start; }
+    .box__service img {
+      width: 60px;
+      margin-bottom: 30px; }
     @media screen and (max-width: 991px) {
       .box__service {
         display: flex;
